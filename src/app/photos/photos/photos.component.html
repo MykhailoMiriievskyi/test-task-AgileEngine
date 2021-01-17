@@ -1,0 +1,24 @@
+<div class="header">
+  <span class="header__title">MY GALLARY</span>
+</div>
+
+<div class="photos" *ngIf="photos">
+  <div class="photos__photo" *ngFor="let photo of photos">
+    <div class="photos__content">
+      <app-photo [photo]="photo"></app-photo>
+    </div>
+    <div class="photos__button">
+      <a routerLink="/photos/{{photo.id}}">
+        <button mat-raised-button color="primary">More information...</button>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="more">
+  <div class="more__button">
+    <button mat-raised-button color="warn" (click)="downloadPhoto()">Download more photos...</button>
+  </div>
+</div>
+

@@ -1,0 +1,7 @@
+<div class="start">
+  <button [disabled]="isAuthButton" (click)="getAutorization()" mat-raised-button color="primary">Go to GALLARY...</button>
+</div>
+
+<div *ngIf="isAuthError" class="error">
+  <span> Autorization error...Please try again later...</span>
+</div>

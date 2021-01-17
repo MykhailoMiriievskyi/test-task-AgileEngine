@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  .header__title {
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+  }
+}
+
+.photos {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .photos__photo {
+    margin: 15px;
+  }
+  .photos__button {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.more {
+  .more__button {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+  }
+}

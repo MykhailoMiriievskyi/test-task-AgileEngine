@@ -1,0 +1,6 @@
+<div *ngIf="photoDetails"></div>
+<div *ngIf="photoDetails && photoDetails.author">{{photoDetails.author}}</div>
+<div *ngIf="photoDetails && photoDetails.camera">{{photoDetails.camera}}</div>
+<div *ngIf="photoDetails && photoDetails.tags">{{photoDetails.tags}}</div>
+<div *ngIf="photoDetails && photoDetails.cropped_picture"><img src="{{ photoDetails.cropped_picture }}" alt=""/></div>
+<div *ngIf="photoDetails && photoDetails.full_picture"><img src="{{ photoDetails.full_picture }}" alt=""/></div>
